@@ -20,3 +20,14 @@
 
 ## Question 3
 (a) ![Question 3, a](/Chapter%202%20-%20Statistical%20Learning/images/Q3.jpeg)
+
+(b)
+***Definitions of Variance and Bias first!***
+**Variance**: *The amount by which $\hat{f}$ would change if we estimated it using a different training data set.*
+**Bias**: *The error that is introduced by approximating a real-life problem, which may be extremely complicated, by much simpler model*
+
+1. **Training Error**: It reduces as the flexibility of model increases because the model will estimate $\hat{f}$ closely to the data available.
+2. **Bias**: As the flexibility of the model goes up, the model will easily overfit to the training dataset, and therefore reduce the size of residuals (the difference between predicted values and the observations).
+3. **$Var(\epsilon)$**: This is irreducible error. Therefore it stays the same
+4. **Variance**: As the model's flexibility goes up, it will capture the patterns of the true $f$. However, as it increases too much, the model will overfit to the training set, and end up not performing well in unseen data points.
+5. **Testing Error**: Likewise to the reason for the **Variance**.
