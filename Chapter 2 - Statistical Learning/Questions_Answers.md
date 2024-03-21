@@ -30,4 +30,36 @@
 2. **Bias**: As the flexibility of the model goes up, the model will easily overfit to the training dataset, and therefore reduce the size of residuals (the difference between predicted values and the observations).
 3. **$Var(\epsilon)$**: This is irreducible error. Therefore it stays the same
 4. **Variance**: As the model's flexibility goes up, it will capture the patterns of the true $f$. However, as it increases too much, the model will overfit to the training set, and end up not performing well in unseen data points.
-5. **Testing Error**: Likewise to the reason for the **Variance**.
+5. **Testing Error**: Likewise to the reason for the **Variance**. 
+
+## Question 5
+***What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression and classification?***
+
+**Advantages**: Often times, the relationships between our predictors and response variable are highly non-linear and complex. If this is the case, flexible approach will capture the ture nature of relationship better than the less flexible approach
+
+**Disadvantages**: We should always be care of the variance-bias trade off. The more flexible our approach is, higher the chance of our model be overfitted to the training dataset. The model will end up performing really well to the training dataset, reducing the training error, but no so good at predicting the unseen data points.
+
+<br>
+
+***Under what circumstances might a more flexible approach be preferred to a less flexible approach?***
+
+**Flexible Model**
+1. When the relationship between the predictors and the response is highly complex
+2. When we cannot confidently assume the underlaying relationship between the response and the predictors
+3. When there are a large amount of data
+
+## Question 7
+
+(a) 
+|Observation|Distance|Class|
+|-----------|--------|-----|
+|1|3.0|Red
+|2|2.0|Red
+|3|3.16|Red
+|4|2.24|Green
+|5|1.41|Green
+|6|1.73|Red
+
+(b) Green; The closest neighbor
+(c) Red; $P(Red) = 2/3$, $P(Green)=1/3$. Therefore, Red
+(d) Small. because when $K$ is smaller, the KNN decision boundary is more flexible.
